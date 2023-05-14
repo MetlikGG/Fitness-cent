@@ -1,64 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
+  <title>Supergym</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container"></div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a class="" href="index.html">
+              <svg width="88" height="32" role="img" aria-label="Логотип Supergym">
+                <use xlink:href="img/sprite.svg#Logo"></use>
+              </svg>
+            </a>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          <nav class="footer__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Абонементы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Тренеры
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Расписание
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a href="#">
+                <svg role="img" aria-label="Мы в Вконтакте" width="25" height="25">
+                  <use href="img/sprite.svg#Vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg role="img" aria-label="Мы в Одноклассниках" width="25" height="25">
+                  <use href="img/sprite.svg#Ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg role="img" aria-label="Мы на Реддит" width="25" height="25">
+                  <use href="img/sprite.svg#Reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </footer>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
