@@ -154,6 +154,55 @@
           </div>
         </div>
       </section>
+      <div class="wrapper__box">
+        <section class="free-training">
+          <div class="free-training__wrapper">
+            <h2>Бесплатное занятие</h2>
+            <div class="free-training__form" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div data-validate-type="text" data-limitation="name" data-on-input-validate
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required>
+                  <input type="text" name="name" aria-label="Имя" placeholder="Имя" required />
+                </div>
+                <div data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required>
+                  <input type="tel" name="phone-number" aria-label="Телефон" placeholder="Телефон" minlength="12"
+                    required />
+                </div>
+                <button class="btn" type="submit" data-validate="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3>Адрес:</h3>
+                <span>г. Омск, ул. 60 лет Октября, 7</span>
+              </li>
+              <li class="contacts__item">
+                <h3>График работы:</h3>
+                <span>Пн-Вс: с <time datetime="8:00">8:00</time> до
+                  <time datetime="22:00">22:00</time></span>
+              </li>
+              <li class="contacts__item">
+                <h3>Телефон:</h3>
+                <span><a href="tel:88005555555">8-800-555-55-55</a></span>
+              </li>
+              <li class="contacts__item">
+                <h3>Email:</h3>
+                <span><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></span>
+              </li>
+            </ul>
+          </div>
+        </section>
 
 
     </main>

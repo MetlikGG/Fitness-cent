@@ -1,0 +1,141 @@
+.free-training {
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  width: 100%;
+  padding-top: 56px;
+  padding-bottom: 70px;
+  display: flex;
+
+  @include vp-1199 {
+    padding-top: 63px;
+    padding-bottom: 65px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+  }
+}
+
+.free-training__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 170px;
+  width: 410px;
+
+  @include vp-1199 {
+    width: 100%;
+    margin-right: 163px;
+    margin-left: 133px;
+  }
+
+  @include vp-767 {
+    margin: 0 15px;
+  }
+}
+
+.free-training__wrapper h2 {
+  font-family: $ff-alumni;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 84px;
+  margin-bottom: 15px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+}
+
+.free-training__form {
+  margin-top: auto;
+}
+
+.free-training__form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+
+  @include vp-1199 {
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.free-training__form div {
+  position: relative;
+}
+
+.free-training__form input {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid $color-light-slate-grey;
+  margin-bottom: 25px;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+  }
+}
+
+.free-training__form input::placeholder {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.free-training__form button {
+  font-size: 14px;
+  line-height: 16px;
+  border-width: 3px;
+  letter-spacing: 0.05em;
+  padding-top: 19px;
+  grid-column: 1/-1;
+
+  @include vp-1199 {
+    padding-top: 15px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+    grid-column: auto;
+  }
+}
+
+.free-training__message {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: $color-torch-red;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.is-valid .free-training__message {
+  color: $color-islamic-green;
+}
