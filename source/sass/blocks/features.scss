@@ -78,9 +78,9 @@
 }
 
 .features__item {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  position: relative;
 
   &:nth-child(n + 4)::before {
     position: absolute;
