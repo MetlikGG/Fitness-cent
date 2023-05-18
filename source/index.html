@@ -16,9 +16,38 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-
-    </header>
+    <div class="wrapper__header-box">
+      <div class="container">
+        <header class="header">
+          <a href="index.html">
+            <svg class="header__logo" width="122" height="44" aria-label="Логотип SuperGym">
+              <use xlink:href="img/sprite.svg#Logo"></use>
+            </svg>
+          </a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+          </ul>
+        </header>
+        <div class="hero">
+          <div class="hero__box">
+            <ul class="hero__list">
+              <li class="hero__item">Тренажерный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
+            <span>омск</span>
+            <h1>Фитнес центр</h1>
+            <a class="btn" href="#subscriptions">Купить абонемент</a>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/hero/hero.webp 1x , img/hero/hero@2x.webp 2x">
+            <img src="img/hero/hero.jpg" srcset="img/hero/hero@2x.png" width="500" height="556" alt="SuperGym-атлет">
+          </picture>
+        </div>
+      </div>
+    </div>
     <main>
 
       <section class="subscriptions" id="subscriptions">
@@ -151,6 +180,178 @@
               <img src="./img/promo/crossFit.jpg" srcset="./img/promo/crossFit@2x.jpg 2x" width="260" height="386"
                 alt="Crossfit">
             </picture>
+          </div>
+        </div>
+      </section>
+      <section class="staff">
+        <div class="container">
+          <div class="staff__wrapper">
+            <h2>Тренеры</h2>
+            <div class="staff__slider swiper">
+              <ul class="staff__list swiper-wrapper">
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-1.webp, img/staff/staff-1@2x.webp 2x">
+                    <img src="img/staff/staff-1.jpg" srcset="img/staff/staff-1@2x.jpg 2x" width="260" height="294"
+                      alt="Анна Павлова">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Анна Павлова</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>Fitness</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победительница чемпионата России&nbsp;по&nbsp;Fitness</li>
+                        <li>Опыт — 5 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-2.webp, img/staff/staff-2@2x.webp 2x">
+                    <img src="img/staff/staff-2.jpg" srcset="img/staff/staff-2@2x.jpg 2x" width="260" height="294"
+                      alt="Алексей Лавров">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Алексей Лавров</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победитель чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 4 года</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-3.webp, img/staff/staff-3@2x.webp 2x">
+                    <img src="img/staff/staff-3.jpg" srcset="img/staff/staff-3@2x.jpg 2x" width="260" height="294"
+                      alt="Александр Пашков">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Александр Пашков</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победитель чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-4.webp, img/staff/staff-4@2x.webp 2x">
+                    <img src="img/staff/staff-4.jpg" srcset="img/staff/staff-4@2x.jpg 2x" width="260" height="294"
+                      alt="Мария Кетова">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Мария Кетова</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победительница чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-1.webp, img/staff/staff-1@2x.webp 2x">
+                    <img src="img/staff/staff-1.jpg" srcset="img/staff/staff-1@2x.jpg 2x" width="260" height="294"
+                      alt="Анна Павлова">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Анна Павлова</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>Fitness</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победительница чемпионата России&nbsp;по&nbsp;Fitness</li>
+                        <li>Опыт — 5 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-2.webp, img/staff/staff-2@2x.webp 2x">
+                    <img src="img/staff/staff-2.jpg" srcset="img/staff/staff-2@2x.jpg 2x" width="260" height="294"
+                      alt="Алексей Лавров">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Алексей Лавров</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победитель чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 4 года</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-3.webp, img/staff/staff-3@2x.webp 2x">
+                    <img src="img/staff/staff-3.jpg" srcset="img/staff/staff-3@2x.jpg 2x" width="260" height="294"
+                      alt="Александр Пашков">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Александр Пашков</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победитель чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="staff__item staff-card swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/staff/staff-4.webp, img/staff/staff-4@2x.webp 2x">
+                    <img src="img/staff/staff-4.jpg" srcset="img/staff/staff-4@2x.jpg 2x" width="260" height="294"
+                      alt="Мария Кетова">
+                  </picture>
+                  <div class="staff-card__info">
+                    <h3>Мария Кетова</h3>
+                    <div class="staff-card__content-wrapper">
+                      <span>CrossFit</span>
+                      <ul>
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Победительница чемпионата России&nbsp;по&nbsp;CrossFit</li>
+                        <li>Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="staff__slider-control slider-control">
+              <button
+                class="slider-control__button slider-control__button--prev swiper-button-staff-prev swiper-button-prev"
+                type="button">
+                <svg width="16" height="32" role="img" aria-label="Назад">
+                  <use xlink:href="img/sprite.svg#Arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="slider-control__button slider-control__button--next swiper-button-staff-next swiper-button-next"
+                type="button">
+                <svg width="16" height="32" role="img" aria-label="Вперёд">
+                  <use xlink:href="img/sprite.svg#Arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
