@@ -1,17 +1,19 @@
-import Swiper from '../../vendor/swiper';
+const trainersSwiper = document.querySelector('.staff__swiper');
 
-const sliderStaffList = document.querySelector('.swiper');
-
-export const initStaffSlider = () => {
-  if (sliderStaffList) {
+const initTrainersSlider = () => {
+  if (trainersSwiper) {
     (() =>
-      new Swiper('.swiper', {
+      new Swiper('.staff__swiper', { // eslint-disable-line
         direction: 'horizontal',
         loop: true,
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
 
         navigation: {
-          nextEl: '.swiper-button-staff--next',
-          prevEl: '.swiper-button-staff--prev',
+          nextEl: '.slider-control__button--next',
+          prevEl: '.slider-control__button--prev',
         },
 
         breakpoints: {
@@ -31,3 +33,5 @@ export const initStaffSlider = () => {
     )();
   }
 };
+
+export {initTrainersSlider};

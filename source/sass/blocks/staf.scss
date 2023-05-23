@@ -16,7 +16,7 @@
 }
 
 .staff .container {
-  max-width: 1294pxpx;
+  max-width: 1294px;
 }
 
 .staff__wrapper {
@@ -58,26 +58,26 @@
   }
 }
 
-.staff__slider {
-  max-width: 1160px;
-  width: 100%;
-}
-
-.staff__slider-control {
-  position: absolute;
-  top: 52%;
-  left: 5px;
-  right: 5px;
+.staff__item {
+  width: 260px;
+  height: 294px;
 
   @include vp-1199 {
-    top: 43%;
-    left: 3.6%;
-    right: 3.6%;
+    width: 268px;
   }
 
   @include vp-767 {
-    top: 48%;
-    left: 5px;
-    right: 5px;
+    width: 226px;
+    height: 274px;
   }
+
+  &:hover,
+  &:focus-within {
+    background-color: rgba($color-sapphire, 0.89);
+  }
+}
+
+.staff__slider {
+  max-width: 1160px;
+  width: 100%;
 }
