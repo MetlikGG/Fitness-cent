@@ -10,7 +10,6 @@
   &:focus-within {
     .staff-card__info {
       height: 100%;
-      padding-bottom: 30px;
       background-color: rgba($color-sapphire, 0.89);
     }
 
@@ -40,7 +39,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include vp-1199 {
+      width: 268px;
+      height: 294px;
+    }
+
+    @include vp-767 {
+      width: 226px;
+      height: 274px;
+    }
   }
+}
+
+.staff-card:hover img,
+.staff-card:focus img {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .staff-card__info {
@@ -52,7 +66,7 @@
   display: grid;
   grid-template-rows: min-content;
   align-items: center;
-  padding: 53px 30px 20px 30px;
+  padding: 47px 25px 20px;
   color: $color-default-white;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -70,12 +84,11 @@
     position: relative;
     z-index: 1;
     place-self: end center;
-    margin: 0;
-    padding: 0;
     font-weight: 700;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 27px;
     text-align: center;
+    margin-top: 5px;
 
     @include vp-1199 {
       transform: translateX(5px);
@@ -91,9 +104,7 @@
   width: 100%;
 
   p {
-    margin: 0;
     margin-bottom: 28px;
-    padding: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -115,10 +126,7 @@
 
   ul {
     height: 120px;
-    margin: 0;
-    padding: 0;
-    padding-left: 25px;
-    list-style-type: none;
+    padding-left: 30px;
   }
 
   li {

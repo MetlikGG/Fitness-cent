@@ -2,7 +2,7 @@
   background-color: $color-default-white;
   color: $color-sapphire;
   padding-top: 120px;
-  padding-bottom: 55px;
+  padding-bottom: 56px;
 
   @include vp-1199 {
     padding-top: 100px;
@@ -30,17 +30,22 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @include vp-767 {
+    width: 290px;
+    height: 292px;
+  }
 }
 
 .promo__inner {
   background-color: $color-torch-red;
   color: $color-default-white;
-  padding: 87px 77px;
+  padding: 87px 80px 87px 77px;
   display: grid;
   grid-template-columns: repeat(2, auto);
 
   @include vp-1199 {
-    padding: 51px 45px;
+    padding: 51px 45px 51px 43px;
   }
 }
 
@@ -50,8 +55,9 @@
   font-size: 82px;
   line-height: 79px;
   text-transform: uppercase;
+  text-align: center;
   grid-column: 1;
-  margin-right: 58px;
+  margin-right: 56px;
   letter-spacing: 0.03em;
   margin-left: 10px;
   max-width: 185px;
@@ -59,7 +65,8 @@
   @include vp-1199 {
     font-size: 48px;
     line-height: 46px;
-    margin-right: 33px;
+    margin-right: -46px;
+    text-align: start;
   }
 
   @include vp-767 {
@@ -121,7 +128,7 @@
 .promo__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;

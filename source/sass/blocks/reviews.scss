@@ -11,13 +11,14 @@
 
   @include vp-767 {
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 }
 
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 300px;
 
   @include vp-1199 {
@@ -30,23 +31,23 @@
 }
 
 .reviews__wrapper h2 {
-  margin: 0 0 36px 10px;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  margin: 0 0 36px 10px;
 
   @include vp-1199 {
-    margin: 0 0 42px -4px;
     font-size: 42px;
     line-height: 50px;
+    margin: 0 0 40px -4px;
   }
 
   @include vp-767 {
-    margin-bottom: 44px;
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 41px;
   }
 }
 
@@ -135,19 +136,19 @@
 
 .reviews__slider-control {
   position: absolute;
-  top: 48%;
-  left: 10px;
-  right: 10px;
+  top: 66%;
+  left: 21%;
+  right: 21%;
 
   @include vp-1199 {
-    top: 43.3%;
-    left: -5px;
-    right: -5px;
+    top: 64.3%;
+    left: 32px;
+    right: 32px;
   }
 
   @include vp-767 {
-    top: 48%;
-    left: 5px;
-    right: 5px;
+    top: 60%;
+    left: 3px;
+    right: 2px;
   }
 }

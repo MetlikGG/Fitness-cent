@@ -3,12 +3,12 @@
 }
 
 .hero img {
-  margin-top: -25px;
+  margin-top: -23px;
 
   @include vp-1199 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 324px;
+    height: 390px;
+    object-fit: cover;
     margin-top: 0;
   }
 
@@ -23,7 +23,7 @@
   grid-template-columns: repeat(2, auto);
   margin-right: 64px;
   margin-top: 88px;
-  margin-left: 20px;
+  margin-left: 18px;
   column-gap: 17px;
 
   @include vp-1199 {
@@ -31,6 +31,7 @@
     margin-right: 30px;
     margin-left: 0;
     width: 48%;
+    column-gap: 24px;
   }
 
   @include vp-767 {
@@ -42,7 +43,7 @@
 }
 
 .hero__list {
-  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-family: $ff-roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -55,6 +56,7 @@
   max-width: 113px;
 
   @include vp-1199 {
+    min-width: 113px;
     margin-top: 90px;
   }
 
@@ -65,15 +67,15 @@
 }
 
 .hero__box span {
-  font-family: "Alumni Sans", "Tahoma", sans-serif;
+  font-family: $ff-alumni;
   font-weight: 600;
   font-size: 48px;
   line-height: 58px;
   margin-bottom: 15px;
-  margin-right: 50px;
+  margin-right: 53px;
   text-align: right;
   grid-column: 2;
-  letter-spacing: 1px;
+  letter-spacing: 0.03em;
   max-width: 200px;
   justify-self: end;
 
@@ -93,7 +95,7 @@
 }
 
 .hero__box h1 {
-  font-family: "Alumni Sans", "Tahoma", sans-serif;
+  font-family: $ff-alumni;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
@@ -101,7 +103,7 @@
   margin-bottom: 50px;
   text-align: right;
   grid-column: 2;
-  letter-spacing: 5px;
+  letter-spacing: 0.05em;
   max-width: 250px;
   justify-self: end;
 
@@ -111,7 +113,7 @@
     line-height: 86px;
     text-transform: none;
     margin-bottom: 38px;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.04em;
   }
 
   @include vp-767 {

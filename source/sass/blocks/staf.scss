@@ -2,7 +2,7 @@
   background-color: $color-default-white;
   color: $color-sapphire;
   padding-top: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 141px;
 
   @include vp-1199 {
     padding-top: 50px;
@@ -10,8 +10,8 @@
   }
 
   @include vp-767 {
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 38px;
   }
 }
 
@@ -22,16 +22,16 @@
 .staff__wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
-  padding-right: 20px;
+  padding-left: 49px;
+  padding-right: 49px;
 
   @include vp-1199 {
-    padding-left: 55px;
-    padding-right: 25px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 
   @include vp-767 {
-    padding: 0 30px;
+    padding: 30px 32px;
   }
 }
 
@@ -80,4 +80,20 @@
 .staff__slider {
   max-width: 1160px;
   width: 100%;
+}
+
+.staff__slider-control {
+
+  @include vp-1199 {
+    position: absolute;
+    top: 61%;
+    left: 4%;
+    right: 4%;
+  }
+
+  @include vp-767 {
+    top: 61.5%;
+    left: 0%;
+    right: 0%;
+  }
 }
