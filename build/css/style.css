@@ -1357,9 +1357,9 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-box-shadow: inset 0 0 0 1000px #74819c;
+  box-shadow: inset 0 0 0 1000px #74819c;
+  -webkit-text-fill-color: #ffffff;
 }
 
 input,
