@@ -161,12 +161,17 @@
     height: 100%;
     top: 0;
     bottom: 0;
+    aspect-ratio: 320/167;
   }
 
   iframe {
     width: 100%;
     height: 100%;
     border: none;
+
+    // @include vp-767 {
+    //   aspect-ratio: 320/167;
+    // }
   }
 }
 

@@ -3866,6 +3866,7 @@ button,
     height: 100%;
     top: 0;
     bottom: 0;
+    aspect-ratio: 320/167;
   }
 
   .about__video img {
