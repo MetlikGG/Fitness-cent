@@ -1320,6 +1320,10 @@ a {
   text-decoration: none;
 }
 
+a.focus-visible:focus {
+  opacity: 0.5;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -1670,6 +1674,10 @@ button,
   background-color: transparent;
   border: 4px solid #ffffff;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2833,6 +2841,9 @@ button,
   padding-right: 10px;
   border-bottom: 1px solid #74819c;
   margin-bottom: 25px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .free-training__form input::-webkit-input-placeholder {
@@ -2873,6 +2884,17 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.free-training__form input:hover {
+  outline: 1px solid #74819c;
+  background-color: #74819c;
+  border-radius: 5px;
+}
+
+.free-training__form input:focus {
+  outline: 1px solid #74819c;
+  border-radius: 5px;
 }
 
 .free-training__form button {
@@ -3639,6 +3661,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .tabs__control.focus-visible:focus {
@@ -4997,6 +5020,10 @@ button,
 }
 
 @media (hover: hover) {
+  a:hover:not(.focus-visible) {
+    opacity: 0.5;
+  }
+
   .about__video-button:hover:not(.focus-visible) {
     -webkit-transform: scale(1.1) translate(-44%, -44%);
     -ms-transform: scale(1.1) translate(-44%, -44%);

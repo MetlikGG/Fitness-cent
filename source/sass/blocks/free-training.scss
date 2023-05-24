@@ -94,6 +94,7 @@
   padding-right: 10px;
   border-bottom: 1px solid $color-light-slate-grey;
   margin-bottom: 25px;
+  transition: $trans-600;
 
   @include vp-1199 {
     margin-bottom: 30px;
@@ -106,6 +107,17 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
+}
+
+.free-training__form input:hover {
+  outline: 1px solid $color-light-slate-grey;
+  background-color: $color-light-slate-grey;
+  border-radius: 5px;
+}
+
+.free-training__form input:focus {
+  outline: 1px solid $color-light-slate-grey;
+  border-radius: 5px;
 }
 
 .free-training__form button {

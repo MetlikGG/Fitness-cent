@@ -39,6 +39,7 @@
   margin-right: 46px;
   position: relative;
   transition: opacity $trans-default;
+  cursor: pointer;
 
   @include hover-focus {
     opacity: 0.5;
