@@ -1,4 +1,5 @@
 const trainersSwiper = document.querySelector('.staff__swiper');
+const reviewSwiper = document.querySelector('.swiper-reviews');
 
 const initTrainersSlider = () => {
   if (trainersSwiper) {
@@ -28,6 +29,19 @@ const initTrainersSlider = () => {
             slidesPerView: 4,
             spaceBetween: 40,
           },
+        },
+      })
+    )();
+  }
+  if (reviewSwiper) {
+    (() =>
+      new Swiper('.swiper-reviews', { // eslint-disable-line
+        direction: 'horizontal',
+        slidesPerView: 1,
+
+        navigation: {
+          nextEl: '.swiper-button-reviews-next',
+          prevEl: '.swiper-button-reviews-prev',
         },
       })
     )();
