@@ -14,9 +14,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./img/hero/hero.webp" as="image" crossorigin="anonymous">
+  <link rel="preload" href="./img/hero/hero@2x.webp" as="image" crossorigin="anonymous">
 </head>
 
 <body>
@@ -135,16 +139,13 @@
                     </li>
                     <li class="tabs__item">
                       <h3>Дневной</h3>
-                      <span>с <time>8:00</time> до
-                        <time>17:00</time></span>
+                      <span>с 8:00 до 17:00</span>
                       <p data-price="1700">1700<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
                     <li class="tabs__item">
                       <h3>Полный день</h3>
-                      <span>с <time>8:00</time> до
-                        <time>22:00</time>
-                      </span>
+                      <span>с 8:00 до 22:00</span>
                       <p data-price="2700">2700<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
@@ -160,16 +161,13 @@
                     </li>
                     <li class="tabs__item">
                       <h3>Дневной</h3>
-                      <span>с <time>8:00</time> до
-                        <time>17:00</time></span>
+                      <span>с 8:00 до 17:00</span>
                       <p data-price="9100">9100<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
                     <li class="tabs__item">
                       <h3>Полный день</h3>
-                      <span>с <time>8:00</time> до
-                        <time>22:00</time>
-                      </span>
+                      <span>с 8:00 до 22:00</span>
                       <p data-price="14500">14500<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
@@ -185,16 +183,13 @@
                     </li>
                     <li class="tabs__item">
                       <h3>Дневной</h3>
-                      <span>с <time>8:00</time> до
-                        <time>17:00</time></span>
+                      <span>с 8:00 до 17:00</span>
                       <p data-price="17300">17300<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
                     <li class="tabs__item">
                       <h3>Полный день</h3>
-                      <span>с <time>8:00</time> до
-                        <time>22:00</time>
-                      </span>
+                      <span>с 8:00 до 22:00</span>
                       <p data-price="27500">27500<b>&#8381;</b></p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </li>
@@ -226,7 +221,7 @@
                       2019</small></time>
                 </li>
                 <li class="promo__item">
-                  <span>Время</span><time datetime="12:00">12:00</time>
+                  <span>Время</span><time datetime="2019-03-07T12:00">12:00</time>
                 </li>
               </ul>
               <p>Ежегодные соревнования по&nbsp;CrossFit</p>
@@ -519,7 +514,7 @@
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__img">
                     <picture>
-                      <source type="image/webp" srcset="./img/reviews/comment.webp 1x, ./imgreviews/comment@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/reviews/comment.webp 1x, ./img/reviews/comment@2x.webp 2x">
                       <img src="./img/reviews/comment.jpg" srcset="./img/reviews/comment@2x.webp"
                         alt="Клиент Анна Орлова" width="80" height="80">
                     </picture>
@@ -531,7 +526,7 @@
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__img">
                     <picture>
-                      <source type="image/webp" srcset="./img/reviews/comment.webp 1x, ./imgreviews/comment@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/reviews/comment.webp 1x, ./img/reviews/comment@2x.webp 2x">
                       <img src="./img/reviews/comment.jpg" srcset="./img/reviews/comment@2x.webp" alt="Мария Петрова"
                         width="80" height="80">
                     </picture>
@@ -571,13 +566,13 @@
                   data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля"
                   data-message-success="Поле заполнено верно" data-required>
-                  <input type="text" name="name" aria-label="Имя" placeholder="Имя" required />
+                  <input type="text" name="name" aria-label="Имя" placeholder="Имя" required>
                 </div>
                 <div data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля"
                   data-message-success="Поле заполнено верно" data-required>
                   <input type="tel" name="phone-number" aria-label="Телефон" placeholder="Телефон" minlength="12"
-                    required />
+                    required>
                 </div>
                 <button class="btn" type="submit" data-validate="submit">
                   Отправить
@@ -596,8 +591,7 @@
               </li>
               <li class="contacts__item">
                 <h3>График работы:</h3>
-                <span>Пн-Вс: с <time datetime="8:00">8:00</time> до
-                  <time datetime="22:00">22:00</time></span>
+                <span>Пн-Вс: с 8:00 до 22:00</span>
               </li>
               <li class="contacts__item">
                 <h3>Телефон:</h3>

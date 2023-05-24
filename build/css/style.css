@@ -1611,6 +1611,7 @@ button,
 }
 
 .about__image img {
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 90% 100%;
@@ -2693,6 +2694,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  aspect-ratio: 260/294;
 }
 
 .staff-card:hover img,
@@ -2927,9 +2929,9 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  border: 7px solid #00359F;
-  -o-border-image: -o-linear-gradient(315deg, #d10a42 0, #00359F 100%);
-  border-image: linear-gradient(135deg, #d10a42 0, #00359F 100%);
+  border: 7px solid #00359f;
+  -o-border-image: -o-linear-gradient(315deg, #d10a42 0, #00359f 100%);
+  border-image: linear-gradient(135deg, #d10a42 0, #00359f 100%);
   border-image-slice: 1;
   z-index: -1;
 }
@@ -3301,8 +3303,7 @@ button,
   .about__image img {
     -o-object-position: 60%;
     object-position: 60%;
-    min-width: 678px;
-    max-height: 345px;
+    aspect-ratio: 678/345;
   }
 
   .about__video {
@@ -3695,8 +3696,7 @@ button,
   }
 
   .staff-card__img-wrapper img {
-    width: 268px;
-    height: 294px;
+    aspect-ratio: 268/294;
   }
 
   .staff-card__info h3 {
@@ -3735,7 +3735,7 @@ button,
   }
 
   .stocks__inner img {
-    width: 399px;
+    min-width: 399px;
     height: 462px;
     -o-object-position: top right;
     object-position: top right;
@@ -3852,8 +3852,7 @@ button,
   .about__image img {
     width: 100%;
     height: 100%;
-    min-width: 320px;
-    min-height: 313px;
+    aspect-ratio: 320/313;
     max-width: none;
     max-height: none;
     margin-bottom: 40px;
@@ -3871,7 +3870,7 @@ button,
 
   .about__video img {
     width: 100%;
-    height: 167px;
+    aspect-ratio: 320/167;
   }
 
   .about__video-button {
@@ -4126,7 +4125,7 @@ button,
   }
 
   .promo__wrapper img {
-    width: 290px;
+    min-width: 290px;
     height: 292px;
   }
 
@@ -4237,8 +4236,7 @@ button,
   }
 
   .staff-card__img-wrapper img {
-    width: 226px;
-    height: 274px;
+    aspect-ratio: 226/274;
   }
 
   .staff-card__info {
@@ -4273,7 +4271,7 @@ button,
   .stocks__inner img {
     -o-object-position: top center;
     object-position: top center;
-    width: 290px;
+    min-width: 290px;
     height: 299px;
   }
 
