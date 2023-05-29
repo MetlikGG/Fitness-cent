@@ -11,7 +11,7 @@
 
   @include vp-767 {
     padding-top: 0;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
   }
 }
 
@@ -60,7 +60,7 @@
 
 .staff__item {
   width: 260px;
-  height: 294px;
+  height: auto;
 
   @include vp-1199 {
     width: 268px;
@@ -68,7 +68,6 @@
 
   @include vp-767 {
     width: 226px;
-    height: 274px;
   }
 
   &:hover,

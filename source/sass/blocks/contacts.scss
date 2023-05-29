@@ -6,6 +6,7 @@
   padding-top: 56px;
   padding-bottom: 55px;
   display: flex;
+  position: relative;
 
   @include vp-1199 {
     padding-top: 63px;
