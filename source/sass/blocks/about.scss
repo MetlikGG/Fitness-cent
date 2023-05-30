@@ -193,16 +193,14 @@
   z-index: 2;
 
   @include vp-1199 {
-    top: 37%;
-    width: 52px;
-    height: 52px;
-    left: 41%;
+    top: 42.3%;
+    left: 44.3%;
     scale: 0.7;
   }
 
   @include vp-767 {
-    top: 35%;
-    left: 43%;
+    top: 41.2%;
+    left: 45.3%;
   }
 
   @include hover-focus {
