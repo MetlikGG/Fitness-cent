@@ -1,3 +1,3 @@
-// Swiper 7.4.1
+// Swiper 9.3.1
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
