@@ -1,10 +1,5 @@
 .hero {
   display: flex;
-
-  @include vp-767 {
-    max-width: 500px;
-    margin: 0 auto;
-  }
 }
 
 .hero img {
@@ -24,7 +19,7 @@
 .hero__box {
   align-self: flex-start;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: max-content 1fr;
   margin-right: 64px;
   margin-top: 88px;
   margin-left: 18px;
@@ -66,8 +61,12 @@
   }
 
   @include vp-767 {
-    margin-top: 77px;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 521px) {
     margin-right: -15px;
+    margin-top: 77px;
   }
 }
 
@@ -123,6 +122,11 @@
 
   @include vp-767 {
     margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 521px) {
+    max-width: 357px;
   }
 }
 

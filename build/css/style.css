@@ -1848,8 +1848,10 @@ button,
   align-self: flex-start;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-  grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: -webkit-max-content 1fr;
+  -ms-grid-columns: max-content 1fr;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
   margin-right: 64px;
   margin-top: 88px;
   margin-left: 18px;
@@ -2512,8 +2514,6 @@ button,
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
   background-color: #1c3374;
-  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
-  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   color: #ffffff;
   min-height: 242px;
   height: auto;
@@ -2633,8 +2633,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .staff__wrapper h2 {
@@ -3132,11 +3132,12 @@ button,
 }
 
 .tabs__item:hover a {
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ed0233), to(#00359f));
-  background: -o-linear-gradient(left, #ed0233 0, #00359f 100%);
-  background: linear-gradient(90deg, #ed0233 0, #00359f 100%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
-  border: none;
+  border: 2px solid transparent;
+  border-left: #ed0233;
+  border-right: #00359f;
 }
 
 .tabs__item h3 {
@@ -3928,11 +3929,6 @@ button,
     line-height: 24px;
   }
 
-  .hero {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
   .hero img {
     display: none;
   }
@@ -3948,8 +3944,7 @@ button,
   }
 
   .hero__list {
-    margin-top: 77px;
-    margin-right: -15px;
+    margin-top: 12px;
   }
 
   .hero__box span {
@@ -3961,6 +3956,7 @@ button,
 
   .hero__box h1 {
     margin-bottom: 25px;
+    max-width: 100%;
   }
 
   .hero__box a {
@@ -4411,6 +4407,17 @@ button,
     font-size: 46px;
     margin-left: 10px;
     -webkit-text-stroke: 1px;
+  }
+}
+
+@media (max-width: 521px) {
+  .hero__list {
+    margin-right: -15px;
+    margin-top: 77px;
+  }
+
+  .hero__box h1 {
+    max-width: 357px;
   }
 }
 
